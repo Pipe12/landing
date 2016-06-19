@@ -3,10 +3,16 @@
 	font-family: 'roboto';
 }
 body {
-
-	background-image: url('images/jaguar-xe.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-image: url('jaguar-xe.jpg');
+	background-position: center;
+	background-size: auto 100%;
+}
+@media screen and (min-width: 780px) {
+	body {
+		background-image: url('jaguar-xe.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
 }
 div {
 	background-color: rgba(0,0,0,0.5);
@@ -17,9 +23,6 @@ div {
 	margin-left: 80px;
 }
 @media screen and (max-width: 780px){
-	body {
-		background-size: 150% 100%;
-	}
 	div {
 		margin: 50px 30px auto	30px;
 	}
